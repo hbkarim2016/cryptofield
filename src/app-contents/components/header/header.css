@@ -1,0 +1,42 @@
+.header{
+    justify-content: space-between;
+}
+.header .logo{
+    justify-content: flex-start;
+}
+.header .logo img{
+    width: 21px;
+    margin-right: 7px;
+}
+.header .logo h4{
+    font-size: 15px;
+    color:white;
+}
+.header .mobile-menu-icon{
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+.header .links{
+    display: flex;
+}
+.header .links li{
+    padding: 10px;
+}
+.header .links a{
+    font-size: 12px;
+    display: block;
+    color: white;
+}
+.header .sign-btns{
+    justify-content: flex-end;
+}
+.header .sign-btns .btn{
+    margin: 10px 8px;
+}
+.header .sign-btns .btn:nth-of-type(1){
+    background: var(--linear-color);
+}
+.header .sign-btns .btn:nth-of-type(2){
+    border: 1px solid white;
+}

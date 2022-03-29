@@ -1,0 +1,45 @@
+.banner-section .banner-content{
+    padding: 100px 0;
+}
+.banner-section .banner-img{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 600px;
+}
+.banner-section .banner-date-item{
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 13px;
+}
+.banner-section .banner-date-item h4{
+    background: var(--linear-color);
+    padding: 6px;
+    color: white;
+    font-size: 20px;
+}
+.banner-section .banner-date-item p{
+    padding: 5px 13px;
+    font-size: 10px;
+    font-weight: 501;
+    background: white;
+}
+.banner-section .banner-header{
+    padding: 10px 0;
+}
+.banner-section .banner-header h1{
+    font-size: 32px;
+    margin: 10px 0;
+    color: white;
+    font-weight: 615;
+}
+.banner-section .banner-btns .btn{
+    color: white;
+    margin-right: 13px;
+}
+.banner-section .banner-btns .btn:nth-of-type(1){
+    background: var(--linear-color);
+}
+.banner-section .banner-btns .btn:nth-of-type(2){
+    background-color: #4153E3;
+}

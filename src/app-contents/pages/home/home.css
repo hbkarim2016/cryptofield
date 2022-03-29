@@ -1,0 +1,18 @@
+.banner-section{
+    background-image: url('../../includes/imgs/bannerImgBg.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 650px auto;
+    padding: 0;
+    height: 100vh;
+}
+.banner-section .banner-bg{
+    background-image: url('../../includes/imgs/bannerBg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 110%;
+    padding: 100px 0;
+}
+.platform-section{
+    background-color: var(--main-color);
+}

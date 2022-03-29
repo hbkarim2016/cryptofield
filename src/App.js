@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+import { Routes, Route } from "react-router-dom";
+import Header from "./app-contents/components/header/Header";
+import Home from "./app-contents/pages/home/Home";
+import NotFound from "./app-contents/pages/notFound/NotFound";
 
 function App() {
+
+  const headerRef = useRef();
+  
+  window.addEventListener( 'scroll', () => {
+    if( headerRef !== undefined ){
+      if( window.pageYOffset > 10 ){
+        headerRef.current.classList.add('headerDownStyle')
+      }else{
+        headerRef.current.classList.remove('headerDownStyle')
+      }
+    }
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header ref={headerRef} className='test'>
+        <Header />
       </header>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

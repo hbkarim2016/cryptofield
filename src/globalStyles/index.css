@@ -1,0 +1,135 @@
+/* ======= IMPORTS ======= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+/* == ------------------- == */
+/* ======= VARIABLES ======= */
+:root{
+    --main-color:#080C49;
+    --main-bg-color:#171B55;
+    --linear-color:linear-gradient(to right,#EC844D, #EB535A);
+}
+/* == ------------------- == */
+/* ======= GLOBAL STYLE ======= */
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+::selection{
+    background-color: var( --main-color);
+    color: white;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2d3280;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color);
+}
+html{
+    background-color: var(--main-bg-color);
+    scrollbar-color:var(--main-bg-color) #2d3280;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s;
+}
+header.headerDownStyle{
+    background-color: var(--main-color);
+    box-shadow: 0 0 5px -1px #000;
+}
+section{
+    padding: 100px 0;
+}
+/* == ------------------- == */
+/* ======= GLOBAL CLASSES ======= */
+.container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.btn{
+    padding: 8px 20px;
+    font-size: 11px;
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.grid{
+    display: grid;
+}
+.grid-two-cols{
+    grid-template-columns: repeat( auto-fill, minmax( 350px, 1fr ) );
+    grid-gap: 20px;
+}
+.flex{
+    display: flex;
+}
+.content-center{
+    justify-content: center;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/* == ------------------- == */
+/* ======= GLOBAL SECTION CLASSES ======= */
+.sectionDesc-header{
+    color: white;
+    padding: 50px 0;
+}
+.sectionDesc-header span{
+    font-size: 12px;
+    font-weight: 501;
+}
+.sectionDesc-header h4{
+    font-size: 25px;
+}
+.sectionDesc-header p,
+.sectionDesc-header p.main{
+    font-size: 12px;
+    padding: 13px 0;
+}
+.sectionDesc-header p{
+    font-weight: 280;
+}
+.sectionDesc-header p.main{
+    font-weight: 501;
+}
+/* == ------------------- == */

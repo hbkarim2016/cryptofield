@@ -1,0 +1,44 @@
+/*
+    == little screen : 1250 width
+    == large tablet screen : 1250 - 1095 width
+    == tablet screen : 992 - 800 width
+    == mobile screen : 800 > width
+*/
+
+/* TABLET SCREEN */
+@media ( max-width:992px ) {
+    .header .links{
+        display: none;
+    }
+    .header .mobile-menu-icon{
+        display: flex;
+    }
+    .header .mobile-menu{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 50px;
+        left: -110%;
+        background-color: var(--main-color);
+        padding: 20px 0;
+        border-bottom: 4px solid var(--main-bg-color);
+        box-shadow: 0 5px 4px -4px #000;
+        transition: all 0.3s;
+    }
+    .header .mobile-menu.active{
+        left: 0;
+    }
+    .header .mobile-menu li{
+        padding: 0;
+    }
+    .header .mobile-menu li a{
+        padding: 20px 0;
+        margin: 0 20px;
+        border-bottom: 1px solid var(--main-bg-color);
+        transition: all 0.3s;
+    }
+    .header .mobile-menu li a:hover{
+        background: var(--main-bg-color);
+        padding-left: 20px;
+    }
+}

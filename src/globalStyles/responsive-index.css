@@ -1,0 +1,38 @@
+/*
+    == little screen : 1250 width
+    == large tablet screen : 1250 - 1095
+    == tablet screen : 992 - 800 width
+    == mobile screen : 800 > width
+*/
+
+/* LITTLE SCREEN */
+@media ( max-width:1250px ) {
+    .container{
+        width: 80%;
+    }
+}
+/* LARGE TABLET SCREEN */
+@media ( max-width:1095px ) {
+    .container{
+        width: 90%;
+    }
+}
+/* TABLET SCREEN */
+@media ( max-width:992px ) {
+    .container{
+        width: 70%;
+    }
+    header{
+        background-color: var(--main-color);
+        box-shadow: 0 0 5px -1px #000;
+    }
+    section{
+        padding: 50px 0;
+    }
+}
+/* TABLET SCREEN */
+@media ( max-width:800px ) {
+    .container{
+        width: 95%;
+    }
+}

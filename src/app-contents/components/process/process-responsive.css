@@ -1,0 +1,16 @@
+/*
+    == little screen : 1250 width
+    == large tablet screen : 1250 - 1095
+    == tablet screen : 992 - 800 width
+    == mobile screen : 800 > width
+*/
+
+/* TABLET SCREEN */
+@media ( max-width:992px ) {
+    .process-img{
+        padding: 0 50px;
+    }
+    .process-content{
+        grid-row-start: none;
+    }
+}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptofield/static/css/main.e75e0edb.css",
-    "main.js": "/cryptofield/static/js/main.e9b2f18d.js",
+    "main.js": "/cryptofield/static/js/main.69135010.js",
     "static/media/bannerImg.png": "/cryptofield/static/media/bannerImg.100d35e7293765277fa8.png",
     "static/media/processImg.png": "/cryptofield/static/media/processImg.66c6187f6117a56408ec.png",
     "static/media/icoImg.png": "/cryptofield/static/media/icoImg.3a6108729f9b520bfb57.png",
@@ -9,10 +9,10 @@
     "static/media/bannerImgBg.png": "/cryptofield/static/media/bannerImgBg.eb019608bcf07e4b70bd.png",
     "index.html": "/cryptofield/index.html",
     "main.e75e0edb.css.map": "/cryptofield/static/css/main.e75e0edb.css.map",
-    "main.e9b2f18d.js.map": "/cryptofield/static/js/main.e9b2f18d.js.map"
+    "main.69135010.js.map": "/cryptofield/static/js/main.69135010.js.map"
   },
   "entrypoints": [
     "static/css/main.e75e0edb.css",
-    "static/js/main.e9b2f18d.js"
+    "static/js/main.69135010.js"
   ]
 }

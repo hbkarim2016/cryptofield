@@ -1,8 +1,6 @@
 import { useRef } from "react";
-import { Routes, Route } from "react-router-dom";
 import Header from "./app-contents/components/header/Header";
 import Home from "./app-contents/pages/home/Home";
-import NotFound from "./app-contents/pages/notFound/NotFound";
 
 function App() {
 
@@ -23,9 +21,7 @@ function App() {
       <header ref={headerRef} className='test'>
         <Header />
       </header>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-      </Routes>
+      <Home />
     </div>
   );
 }

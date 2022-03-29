@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Image from '../../includes/imgs/Vectorlogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
@@ -24,46 +23,39 @@ const Header = () => {
             </div>
             <ul className={`links mobile-menu ${ navBar === 1 ? 'active' : '' } content-center flex`}>
                 <li>
-                    <Link 
-                    to='#platform'>
+                    <a href='#platform'>
                         what is ico
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link 
-                    to='#tokenSale'>
+                    <a href='#tokenSale'>
                         Token sale
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link 
-                    to='#roadMap'>
+                    <a href='#roadMap'>
                         Road map
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link 
-                    to='#apps'>
+                    <a href='#apps'>
                         Apps
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link 
-                    to='#team'>
+                    <a href='#team'>
                         Team
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link 
-                    to='#faqs'>
+                    <a href='#faqs'>
                         Faqs
-                    </Link>
+                    </a>
                 </li>
                 <li>
-                    <Link 
-                    to='#contact'>
+                    <a href='#contact'>
                         contact
-                    </Link>
+                    </a>
                 </li>
             </ul>
             <div onClick={handleMenu} className='mobile-menu-icon flex content-center'><FontAwesomeIcon icon={navBar === 0 ? faBars : faClose} /></div>

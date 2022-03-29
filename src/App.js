@@ -18,8 +18,12 @@ function App() {
 
   return (
     <div className="App">
-      
-      <Home />
+      <header ref={headerRef} className='test'>
+        <Header />
+      </header>
+      <div>
+        <Home />
+      </div>
     </div>
   );
 }

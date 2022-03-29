@@ -18,9 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <header ref={headerRef} className='test'>
-        <Header />
-      </header>
+      
       <Home />
     </div>
   );
